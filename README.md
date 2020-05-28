@@ -1,0 +1,2 @@
+# ni
+NixOS Installer
