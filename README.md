@@ -1,12 +1,15 @@
-# ni
-NixOS Installer
+# NI - NixOS Installer
 
 ## WARNING
-**!!!This script will erase your entire disk = ALL DATA WILL BE LOST!!!**
+**!!!THIS SCRIPT WILL ERASE YOUR ENTIER DISK = ALL DATA WILL BE LOST!!!**
+
+
 Use at your own risk, ideally on a new computer. **NEVER** use it on existing installations as this 
 installer will overwrite your disk.
 
 ## Usage
+
+### Preparation
 Download the latest graphical live NixOS from https://channels.nixos.org/nixos-20.03/latest-nixos-plasma5-x86_64-linux.iso 
 and create a live USB with it, e.g. (be careful):
 
@@ -20,14 +23,23 @@ Boot into live disk and start DM (In the newest stable NixOS, this should be aut
 
 Connect to the Internet.
 
-Download the installation script:
+### Running the installer
+Open Terminal and download the installation script:
 
-```$ wget https://raw.githubusercontent.com/1000101/ni/master/ni.sh```
+```$ curl -O https://raw.githubusercontent.com/1000101/ni/master/ni.sh```
 
 Run the installation script:
 
 ```$ sudo bash ni.sh```
 
-Save the password (same for root&encryption).
+Don't forget to write down the **password** (same for root&encryption).
 
-Reboot the PC and set user password.
+### Post installation
+
+Login as root and set user password:
+
+```# passwd yourusernamehere```
+
+Then logout and login as user.
+
+Enjoy!
