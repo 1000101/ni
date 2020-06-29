@@ -41,7 +41,6 @@
     vim
     wget
     # Desktop utilities
-    chromium
     evince
     firefox
     keepassxc
