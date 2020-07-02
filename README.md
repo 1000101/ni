@@ -1,4 +1,5 @@
 # NI - NixOS Installer
+A simple guided Terminal NixOS Installer.
 
 ## WARNING
 **!!!THIS SCRIPT WILL ERASE YOUR ENTIER DISK = ALL DATA WILL BE LOST!!!**
@@ -31,6 +32,8 @@ Open Terminal and download the installation script:
 Run the installation script:
 
 ```$ sudo bash ni.sh```
+
+The script will guide you through the installation process.
 
 Don't forget to write down the **password** (same for root&encryption).
 
