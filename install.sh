@@ -154,7 +154,7 @@ print_finish(){
   echo
     printf "!!! This is your initial ROOT PASSWORD"
   if [ $ENCRYPTION ]; then
-    printf "and DISK ENCRYPTION PASSPHRASE"
+    printf " and DISK ENCRYPTION PASSPHRASE"
   fi 
   echo " !!!"
   echo
