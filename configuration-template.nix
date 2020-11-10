@@ -118,5 +118,10 @@
   # servers. You should change this only after NixOS release notes say you
   # should.
   system.stateVersion = "20.03"; # Did you read the comment?
- 
+
+  # AMD Ryzen 4750U workaround: https://gitlab.freedesktop.org/drm/amd/-/issues/1348
+  # https://bbs.archlinux.org/viewtopic.php?id=259892&p=2
+  boot.kernelPackages = pkgs.linuxPackages_5_9;
+  boot.kernelParams = [ "nomodeset" "pci=noats" "iommu=soft" ];
+
 }

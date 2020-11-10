@@ -131,7 +131,7 @@ run_nixossetup(){
   echo -n "[-] Generating NixOS configuration... "
   nixos-generate-config --root /mnt >/dev/null 2>&1
   mv /mnt/etc/nixos/configuration.nix /mnt/etc/nixos/configuration.nix-old
-  wget -q https://raw.githubusercontent.com/1000101/ni/master/configuration-template.nix -O /mnt/etc/nixos/configuration.nix
+  wget -q https://raw.githubusercontent.com/1000101/ni/amd/configuration-template.nix -O /mnt/etc/nixos/configuration.nix
   if [ $ENCRYPTION ]; then
     sed -i "s~##device##~${INST_DEVICE}~g" /mnt/etc/nixos/configuration.nix
   else
