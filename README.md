@@ -44,3 +44,24 @@ Login as root and set user password:
 Then logout and login as user.
 
 Enjoy!
+
+
+## AMD Ryzen 4750U
+This is quite a new processor and the live USB hangs on startup due to GPU issues. We have to apply some workarounds (latest kernel and kernel params) and also boot from unstable minimal version of NixOS.
+
+### Preparation
+Download the latest minimal (no GUI) live NixOS from https://channels.nixos.org/nixos-unstable/latest-nixos-minimal-x86_64-linux.iso 
+and create a live USB.
+
+Boot into live disk and start and connect to the Internet (ethernet or wpa_supplicant).
+
+### Running the installer
+Open Terminal and download the installation script (NOTE THE DIFFERENT BRANCH - AMD):
+
+```$ curl -O https://raw.githubusercontent.com/1000101/ni/amd/ni.sh```
+
+Run the installation script:
+
+```$ sudo bash ni.sh```
+
+The rest is the same as above.
