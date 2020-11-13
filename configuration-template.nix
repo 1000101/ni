@@ -100,7 +100,7 @@
   # Enable for Gnome Desktop Environment
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
-
+  services.xserver.videoDrivers = [ "amdgpu" ];
   # Set your time zone.
   time.timeZone = "UTC";
 
@@ -122,6 +122,5 @@
   # AMD Ryzen 4750U workaround: https://gitlab.freedesktop.org/drm/amd/-/issues/1348
   # https://bbs.archlinux.org/viewtopic.php?id=259892&p=2
   boot.kernelPackages = pkgs.linuxPackages_5_9;
-  boot.kernelParams = [ "nomodeset" "pci=noats" "iommu=soft" ];
-
+  boot.initrd.kernelModules = [ "amdgpu" ];
 }
