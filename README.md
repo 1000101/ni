@@ -50,7 +50,7 @@ Enjoy!
 This is quite a new processor and the live USB hangs on startup due to GPU issues. We have to apply some workarounds (latest kernel and kernel params) and also boot from unstable minimal version of NixOS.
 
 ### Preparation
-Download the latest minimal (no GUI) live NixOS from https://channels.nixos.org/nixos-unstable/latest-nixos-minimal-x86_64-linux.iso 
+Download the 20.09 minimal (no GUI) live NixOS from https://channels.nixos.org/nixos-20.09/latest-nixos-minimal-x86_64-linux.iso 
 and create a live USB.
 
 Boot into live disk and start and connect to the Internet (ethernet or wpa_supplicant).
