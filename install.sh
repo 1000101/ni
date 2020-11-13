@@ -56,7 +56,7 @@ find_install_device() {
 
 run_parted() {
   while true; do
-    read -p "[?] We are going to to run parted on ${bold}$INST_DEVICE${normal}. Is this okay? [Yes/No] " confirm
+    read -p "[?] We are going to run parted on ${bold}$INST_DEVICE${normal}. Is this okay? [Yes/No] " confirm
       case $confirm in
         [yY][eE][sS]* ) break;;
         [Nn][oO]* ) echo "Terminating the installer. Bye!"; exit;;
