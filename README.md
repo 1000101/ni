@@ -6,7 +6,7 @@ More info (what's inside) can be found at https://dopp.sk/posts/NixOS_Installer/
 
 ## WARNING
 
-**!!!THIS SCRIPT WILL ERASE YOUR ENTIER DISK = ALL DATA WILL BE LOST!!!**
+**!!!THIS SCRIPT WILL ERASE YOUR ENTIRE DISK = ALL DATA WILL BE LOST!!!**
 
 Use at your own risk, ideally on a new computer. **NEVER** use it on existing installations as this
 installer will overwrite your disk.
