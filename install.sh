@@ -70,7 +70,7 @@ run_parted() {
     echo -n "Please, erase the device using GPparted, then re-run the installer."
     exit;
   fi
-  parted $INST_DEVICE -- mklabel gpt >/dev/null 2>&1 
+  parted $INST_DEVICE -- mklabel gpt >/dev/null 2>&1
   parted $INST_DEVICE -- mkpart ESP fat32 1MiB 512MiB set 1 boot on >/dev/null 2>&1
   parted $INST_DEVICE mkpart primary ext4 537M 100% set 2 lvm on >/dev/null 2>&1
   echo " done."
