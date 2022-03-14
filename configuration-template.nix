@@ -12,7 +12,7 @@
 
   # Specify the encrypted disk
   boot.initrd.luks.devices.root = {
-    device = "##device##2"; 
+    device = "##device##2";
     preLVM = true;
   };
 
@@ -22,7 +22,7 @@
 
   # Networking setup
   networking.hostName = "##username##";
-  
+
   # Enable NetworkManager
   networking.networkmanager.enable = true;
 
@@ -31,9 +31,9 @@
 
   # Allow unfree proprietary packages such as spotify or vscode
   nixpkgs.config.allowUnfree = true;
-  
+
   # System-wide packages
-  environment.systemPackages = with pkgs; [ 
+  environment.systemPackages = with pkgs; [
     # System utilities
     ark
     usbutils
@@ -117,6 +117,6 @@
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
-  system.stateVersion = "20.03"; # Did you read the comment?
- 
+  system.stateVersion = "21.11"; # Did you read the comment?
+
 }

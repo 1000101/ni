@@ -1,4 +1,4 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 set -e
 
 # Colours are for cool kids
@@ -7,7 +7,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 
 print_banner() {
-  echo 
+  echo
   echo " N)    nn  I)iiii  "
   echo " N)n   nn    I)    "
   echo " N)nn  nn    I)           Welcome to"
@@ -155,7 +155,7 @@ print_finish(){
     printf "!!! This is your initial ROOT PASSWORD"
   if [ $ENCRYPTION ]; then
     printf " and DISK ENCRYPTION PASSPHRASE"
-  fi 
+  fi
   echo " !!!"
   echo
   echo Username:${bold} $INST_USERNAME ${normal}
@@ -164,7 +164,7 @@ print_finish(){
   printf "!!! This is your initial ROOT PASSWORD"
   if [ $ENCRYPTION ]; then
     printf "and DISK ENCRYPTION PASSPHRASE"
-  fi 
+  fi
   echo " !!!"
   echo
 }
