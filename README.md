@@ -2,7 +2,7 @@
 
 A simple guided Terminal NixOS Installer.
 
-More info (what's inside) can be found at https://dopp.sk/posts/NixOS_Installer/
+More info (what's inside) can be found at https://1000101.top/posts/NixOS_Installer/
 
 ## WARNING
 
